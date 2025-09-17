@@ -1,0 +1,134 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color:darkred;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color:coral;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background:#2575fc;
+  border-radius: 4px;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background: #111;
+    display: none;
+    padding: 1rem;
+  }
+
+  #toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
+main {
+  flex: 1; 
+  padding: 60px 20px;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color:darkturquoise;
+}
+
+main p {
+  font-size: 1.2rem;
+  color:#f9f9f9;
+}
+
+
+footer {
+  background: #222;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer ul li a {
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+
+  background: url("photo.jpg") no-repeat center center fixed;
+  background-size: cover;
+}

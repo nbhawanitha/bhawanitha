@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venue Booking - Ticketverz</title>
+  <link rel="stylesheet" href="venue.css">
+</head>
+<body style="background: url('photo1.jpg') no-repeat center center fixed; background-size: cover;">
+  <header>
+    <nav class="navbar">
+      <div class="logo">Ticketverz</div>
+      <input type="checkbox" id="toggle" />
+      <label for="toggle" class="hamburger">&#9776;</label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="venue.html" class="active">Venue Booking</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="event.html">Event Details</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="venue-page">
+    <h1>Book Your Venue</h1>
+    <p>Block your venue to celebrate with us! Make with us memories.</p>
+
+    <form class="venue-form">
+      <label for="venue">Select Venue:</label>
+      <select id="venue" name="venue" required>
+        <option value="">--Choose a Venue--</option>
+        <option value="stadium"> Stadium</option>
+        <option value="hall">Grand Convention Hall</option>
+        <option value="theater">Cinemea Theater</option>
+        <option value="arena">TRP HALL</option>
+      </select>
+
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Select Time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="seats">Number of Seats:</label>
+      <input type="number" id="seats" name="seats" min="1" max="40" required>
+
+      <label for="name">Your Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <button type="submit" class="btn">Book Now</button>
+    </form>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

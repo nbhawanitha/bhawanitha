@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color:blue;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background: #2575fc;
+  border-radius: 4px;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background:chocolate;
+    display: none;
+  }
+
+  #toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.venue-page {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.venue-form {
+  background: #fff;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.venue-form label {
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+.venue-form input,
+.venue-form select,
+.venue-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  padding: 12px;
+  background: #2575fc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #6a11cb;
+}
+
+
+footer {
+  background: #222;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer ul li a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+
+.form-container {
+  background: #fff;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input,
+.form-container textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
